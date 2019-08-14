@@ -112,9 +112,32 @@ label {
 .vegan_checker:checked ~ .vegan {
   color: #6c9a80;
   font-weight: bold;
+  border: black 1px solid;
+  animation: bounce 1s 6 alternate;
+  -webkit-animation: bounce 1s 6 alternate;
 }
 
 .carnivore_checker:checked ~ .carnivore {
   color: #c55b27;
   font-weight: bold;
+  border: black 1px solid;
+  animation: bounce 1s 6 alternate;
+  -webkit-animation: bounce 1s 6 alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
